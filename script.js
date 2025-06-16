@@ -48,7 +48,7 @@ class SlidingPuzzle {
                     const tileRow = Math.floor((tileNumber - 1) / this.size);
                     const tileCol = (tileNumber - 1) % this.size;
                     
-                    piece.style.backgroundImage = `url('./images/${this.currentImage}')`;
+                    piece.style.backgroundImage = `url('${this.currentImage}')`;
                     piece.style.backgroundPosition = `-${tileCol * 100}px -${tileRow * 100}px`;
                     // Remove tile numbers to display only the image
                     piece.textContent = '';
