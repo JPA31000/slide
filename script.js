@@ -50,7 +50,8 @@ class SlidingPuzzle {
                     
                     piece.style.backgroundImage = `url('./images/${this.currentImage}')`;
                     piece.style.backgroundPosition = `-${tileCol * 100}px -${tileRow * 100}px`;
-                    piece.textContent = tileNumber;
+                    // Remove tile numbers to display only the image
+                    piece.textContent = '';
                     
                     piece.addEventListener('click', () => this.moveTile(row, col));
                 }
