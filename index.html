@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Sliding - Images de Chantier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Puzzle Sliding BTP</h1>
+        <div class="game-controls">
+            <select id="imageSelect">
+                <option value="chantier1.jpg">Chantier 1</option>
+                <option value="chantier2.jpg">Chantier 2</option>
+                <option value="chantier3.jpg">Chantier 3</option>
+            </select>
+            <button id="shuffleBtn">Mélanger</button>
+            <button id="solveBtn">Résoudre</button>
+        </div>
+        <div class="puzzle-container" id="puzzleContainer">
+            <!-- Les pièces du puzzle seront générées ici -->
+        </div>
+        <div class="game-info">
+            <p>Mouvements: <span id="moveCount">0</span></p>
+            <p id="gameStatus">Mélangez pour commencer</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
