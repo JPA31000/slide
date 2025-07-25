@@ -157,7 +157,6 @@ class SlidingPuzzle {
 
     changeImage(imageName) {
         this.currentImage = imageName;
-        this.renderPuzzle();
         // When changing image, reset game state including timer
         this.resetGame();
     }
